@@ -11,9 +11,9 @@ var pozicija = 0;
 
 document.addEventListener('keydown', function(e){
     var kljuc = doznovljeni[e.keyCode];
-    var potreban = konami[pozicija];
+    var potrebanTetris = konami[pozicija];
 
-    if(kljuc == potreban){
+    if(kljuc == potrebanTetris){
         pozicija++;
         if(pozicija == konami.length){
             window.alert("Znaš svoje Easet Egg-ove!");
@@ -53,6 +53,6 @@ document.addEventListener('keydown', function(e){
         }
     }
     else{
-        pozicija = 0;
+        punkpozicija = 0;
     }
 });
