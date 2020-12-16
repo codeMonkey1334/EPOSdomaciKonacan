@@ -1,0 +1,161 @@
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+li{
+    font-family: 'Open Sans', sans-serif;
+}
+.header{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(157,117,203,1) 100%);
+}
+.header>img{
+    display: block;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header>p{
+    font-size: 32px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+.header>nav{
+    margin-left: auto;
+    margin-right: auto;
+}
+.header>nav>ul{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+li{
+    background-color: #9D75CB;
+    font-size: 24px;
+    list-style: none;
+    border: 5px solid #8f69b7;
+    border-radius: 15px;
+    padding: 0px 10px 0px 10px;
+}
+.prviDeo{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    ". . . ."
+    ". tekst slika ."
+    ". . . .";
+}
+.tekst { 
+    grid-area: tekst;
+    margin: auto;
+}
+.tekst>h1{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.slika {
+    grid-area: slika;
+}
+.slika>img{
+    width: 100%;
+}
+.drugiDeo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    ". . . . . . . ."
+    ". clna1 clna1 clna1 clan2 clan2 clan2 ."
+    ". . . . . . . .";
+}
+.clan2 {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "clan2_titula clan2_titula clan2_slika"
+        "clan2_titula clan2_titula clan2_slika";
+    grid-area: clan2;
+}
+.clan2_slika { 
+    grid-area: clan2_slika; 
+}
+.clan2_slika>img{
+    width: 50%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+.clan2_titula { 
+    grid-area: clan2_titula;
+    align-self: center;
+    text-align: right;
+    margin: auto;  
+}
+.clna1 {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "clan1_titula clan1_titula clan1_slika"
+        "clan1_titula clan1_titula clan1_slika";
+    grid-area: clna1;
+}
+.clan1_slika { 
+    grid-area: clan1_slika; 
+}
+.clan1_slika>img{
+    width: 50%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+.clan1_titula { 
+    grid-area: clan1_titula;
+    align-self: center;
+    text-align: right;
+    margin: auto; 
+}
+#pitanje{
+    text-align: center;
+    font-size: 25px;
+}
+.pitanje{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+}
+.pitanje>button{
+    justify-content: center;
+    justify-self: center;
+    font-size: 30px;
+    background-color:  #9D75CB;
+    border-color: #8f69b7;
+    border-radius: 20px;
+    width: 20%;
+}
+.footer{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(157,117,203,1) 100%);
+}
+.footer>p{
+    text-align: center;
+}

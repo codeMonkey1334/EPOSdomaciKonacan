@@ -1,0 +1,113 @@
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+li{
+    font-family: 'Open Sans', sans-serif;
+}
+.header{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(157,117,203,1) 100%);
+}
+.header>img{
+    display: block;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header>p{
+    font-size: 32px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+.header>nav{
+    margin-left: auto;
+    margin-right: auto;
+}
+.header>nav>ul{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+li{
+    background-color: #9D75CB;
+    font-size: 24px;
+    list-style: none;
+    border: 5px solid #8f69b7;
+    border-radius: 15px;
+    padding: 0px 10px 0px 10px;
+}
+.sadrzaj{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 0.5fr;
+    gap: 10px 10px;
+    grid-template-areas:
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    "veci veci veci veci veci slika slika slika slika slika"
+    "veci veci veci veci veci slika slika slika slika slika"
+    "manji manji manji manji manji slika slika slika slika slika"
+    "manji manji manji manji manji slika slika slika slika slika"
+    "manji manji manji manji manji slika slika slika slika slika"
+    "manji manji manji manji manji slika slika slika slika slika"
+    "dugme dugme dugme dugme dugme slika slika slika slika slika"
+    ". . . . . . . . . ."
+    ". . . . . . . . . .";
+}
+.dugme { 
+    background-color: #9D75CB;
+    border: 5px solid #8f69b7;
+    border-radius: 15px;
+    padding: 5px 10px 0px 10px;
+    justify-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 48px;
+    grid-area: dugme; 
+}
+.veci { 
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 72px;
+    grid-area: veci; 
+}
+.manji {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+    font-size: 60px;
+    grid-area: manji;
+}
+.slika { 
+    display: block;
+    margin: auto;
+    justify-self: center;
+    width: 80%;
+    grid-area: slika;
+}
+.footer{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(157,117,203,1) 100%);
+}
+.footer>p{
+    text-align: center;
+}
